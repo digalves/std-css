@@ -1,0 +1,49 @@
+body {
+  background: #263850;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 100px auto;
+  width: 1000px;
+}
+
+.image-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  transition: 0.9s;
+}
+
+.text-box {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 0, 0.9);
+  transition: 0.5s;
+}
+
+.text-box h1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  font-family: arial;
+}
+
+.image-box:hover .text-box {
+  left: 0%;
+}
+
+.image-box:hover img {
+  transform: scale(1.2);
+}
