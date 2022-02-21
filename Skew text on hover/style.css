@@ -5,7 +5,7 @@ body {
 }
 
 .text {
-  margin: 250px 300px;
+  margin: 300px 300px;
   text-align: center;
   display: inline-block;
   transition: 0.5s;
@@ -44,7 +44,8 @@ body {
 .text:hover span:nth-child(even) {
   transform: skewY(15deg);
   color: #8a8989;
-  box-shadow: 0 60px 20px rgba(0, 0, 0, 0.1) inset 0px 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 60px 20px rgba(0, 0, 0, 0.1),
+    inset 0px 0 30px rgba(0, 0, 0, 0.2);
 }
 
 .text:hover {
