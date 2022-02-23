@@ -1,0 +1,65 @@
+body {
+  background: #292929;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: arial;
+  height: 100vh;
+}
+
+.card-box {
+  perspective: 500px;
+  margin: 15px;
+}
+
+.card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transition: 0.5s ease;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+}
+
+.facebook {
+  background: #3b5998;
+  color: #fff;
+}
+
+.twitter {
+  background: #55acee;
+  color: #fff;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card-back {
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card-box:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
